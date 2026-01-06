@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: 'Schemerr | The ultimate AI-assisted development tool',
   description: 'Deploy faster with Schemerr. The ultimate AI-assisted development tool for developers to build, deploy, and scale applications with ease.',
   keywords: 'schemerr, AI development, cloud orchestration, deployment tool',
+  icons: {
+    icon: '/schemerr-logo.png',
+    shortcut: '/schemerr-logo.png',
+    apple: '/schemerr-logo.png',
+  },
 }
 
 export default function RootLayout({
