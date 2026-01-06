@@ -34,7 +34,7 @@ export function Navbar() {
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <a
-                        href="https://github.com"
+                        href="https://github.com/sammy440/schemerr-waitlist"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 p-2.5 text-slate-400 hover:text-white transition-colors bg-white/[0.03] rounded-xl border border-white/[0.05] hover:border-emerald-500/40"
