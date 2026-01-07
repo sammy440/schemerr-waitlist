@@ -6,6 +6,8 @@ import { useState, useRef, FormEvent } from 'react'
 import { Navbar } from '@/components/Navbar'
 import { Background } from '@/components/Background'
 import { CliDemo } from '@/components/CliDemo'
+import { Features } from '@/components/Features'
+import { Footer } from '@/components/Footer'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30, filter: 'blur(10px)' },
@@ -109,7 +111,7 @@ export default function WaitlistPage() {
   }
 
   return (
-    <div ref={containerRef} className="relative min-h-screen text-white overflow-hidden bg-[#000103] selection:bg-emerald-500 selection:text-black font-sans antialiased flex flex-col">
+    <div ref={containerRef} className="relative min-h-screen text-white overflow-x-hidden bg-[#000103] selection:bg-emerald-500 selection:text-black font-sans antialiased flex flex-col">
       <Background />
       <Navbar />
 
@@ -243,8 +245,7 @@ export default function WaitlistPage() {
           ))}
         </motion.p>
 
-        {/* CLI Demo */}
-        <CliDemo />
+
         {/* Waitlist Form */}
         <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
@@ -377,7 +378,11 @@ export default function WaitlistPage() {
             No spam. Unsubscribe anytime.
           </motion.p>
         </motion.div>
+        {/* CLI Demo */}
+        <CliDemo />
       </main>
+      <Features />
+      <Footer />
     </div>
   )
 }
