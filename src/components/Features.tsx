@@ -4,7 +4,9 @@ import { motion } from 'framer-motion'
 import {
     Terminal, Globe, Zap, Settings2, Lock,
     MessageSquare, GitBranch, Code, Puzzle,
-    ArrowRight, Sparkles, LayoutGrid, Repeat, Server
+    ArrowRight, Sparkles, LayoutGrid, Repeat, Server,
+    SpaceIcon,
+    Projector
 } from 'lucide-react'
 
 const features = [
@@ -19,12 +21,12 @@ const features = [
     {
         icon: Globe,
         title: "Multi-Provider Support",
-        description: "Deploy to Netlify, Vercel, and Railway from a single tool. One CLI, multiple platforms.",
+        description: "Deploy to Netlify, Vercel, and Railway, Render, and more from a single tool. One CLI, multiple platforms.",
         color: "from-blue-400 to-indigo-400",
         iconColor: "text-blue-400"
     },
     {
-        icon: Sparkles,
+        icon: Projector,
         title: "Smart Provider Detection",
         description: "Automatically detects static sites, React/Vite, and Next.js projects to choose the right strategy.",
         color: "from-purple-400 to-pink-400",
@@ -32,7 +34,7 @@ const features = [
     },
     {
         icon: Settings2,
-        title: "Zero Configuration",
+        title: "Fast Configuration",
         description: "Get started instantly with sensible defaults. Optional config available when you need total control.",
         color: "from-amber-400 to-orange-400",
         iconColor: "text-amber-400"
@@ -66,9 +68,9 @@ const features = [
         iconColor: "text-indigo-400"
     },
     {
-        icon: Puzzle,
-        title: "Open & Extensible",
-        description: "Plugin-ready architecture designed to grow. Community contributions always welcome.",
+        icon: Sparkles,
+        title: "AI insight and debugging",
+        description: "Converse with schemerrAI to get insights and debugging help.",
         color: "from-fuchsia-400 to-pink-400",
         iconColor: "text-fuchsia-400"
     }
@@ -106,10 +108,11 @@ export function Features() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed"
+                        className="text-md text-slate-400 max-w-2xl mx-auto leading-relaxed"
                     >
-                        Schemerr simplifies deployment by giving developers one CLI to deploy anywhere.
-                        From static sites to modern frameworks, stop configuring and start shipping.
+                        Schemerr is a unified deployment layer that helps teams ship reliably across modern hosting providers, without stitching together separate workflows for frontend and backend services.
+
+                        Today, Schemerr supports Vercel, Netlify, Railway, and Render, enabling teams to deploy with one command and a consistent release experience across environments.
                     </motion.p>
                 </div>
 

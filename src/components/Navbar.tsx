@@ -16,9 +16,9 @@ export function Navbar() {
                     transition={{ duration: 0.8 }}
                     className="flex items-center gap-2.5 group cursor-pointer"
                 >
-                    <div className="relative h-9 w-auto group-hover:scale-105 transition-transform">
+                    <div className="relative h-8 w-auto group-hover:scale-105 transition-transform">
                         <img
-                            src="/schemerr-logo2.png"
+                            src="/schemerr-logo1.png"
                             alt="Schemerr Logo"
                             className="h-full w-auto object-contain object-left"
                         />
